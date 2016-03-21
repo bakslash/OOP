@@ -1,0 +1,31 @@
+Inheritance
+
+Inheritance is one of the fundamental principles of object-oriented programming. It allows a class to "inherit" the behavior or characteristics of another, more general class. For example, a lion belongs to the biological family of cats (Felidae). All cats that have four paws, are predators and hunt their prey. This functionality can be coded once in the Felidae class and all its predators can reuse it – Tiger, Puma, Bobcat, etc. 
+
+Inheritance is described as is-kind-of relationship, e.g.Tiger is kind of Animal.
+
+In inheritance.  Objects can relate to eachother
+with either a “has a”, “uses a” or an “is a” relationship.  “Is a”
+is the inheritance way of object relationship.  The example of
+this that has always stuck with me over the years is a library (I think
+I may have read it in something Grady Booch wrote).  So, take a
+library, for example.  
+
+A library lends more than just books, it
+also lends magazines, audiocassettes and microfilm.  On some
+level, all of these items can be treated the same: All four types
+represent assets of the library that can be loaned out to people. 
+However, even though the 4 types can be viewed as the same, they are
+not identical.  A book has an ISBN and a magazine does not. 
+And audiocassette has a play length and microfilm cannot be checked out
+overnight.
+
+Each of these library’s assets should be represented by its own
+class definition.  Without inheritance though, each class must
+independently implement the characteristics that are common to all
+loanable assets.  All assets are either checked out or available
+for checkout.  All assets have a title, a date of acquisition and
+a replacement cost.  Rather than duplicate functionality,
+inheritance allows you to inherit functionality from another class,
+called a superclass or base class.
+
